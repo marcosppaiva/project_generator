@@ -24,7 +24,7 @@ Root
 
 ## Instalation
 
-To install ** Project Generator**, follow the steps below:
+To install **Project Generator**, follow the steps below:
 
 1. Clone the repository or download the project files.
 2. In the terminal navigate to the directory containing the `pyproject.toml` file.
