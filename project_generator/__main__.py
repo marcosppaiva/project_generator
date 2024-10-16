@@ -1,4 +1,5 @@
 import os
+import argparse
 
 _DIRS = ['src', 'data', 'data', 'data/raw', 'data/processed', 'docs', 'notebooks']
 
@@ -14,13 +15,12 @@ def create_project_structure(root_path: str) -> None:
 
     for file in _FILES:
         file_path = os.path.join(root_path, file)
-        with open(file_path, 'w') as f:
+        with open(file_path, 'w', encoding='utf-8') as f:
             f.write('')
         print(f'Created file: {file_path}')
 
 
 def main() -> None:
-    import argparse
 
     parse = argparse.ArgumentParser(description='Create project structure')
     parse.add_argument('root', type=str, help='Root directory of the project')
